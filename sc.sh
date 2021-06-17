@@ -14,6 +14,11 @@ storage "raft" {
   node_id = "node 2"
 }
 
+retry_join {
+     auto_join = "provider=aws region=eu-north-1 tag_key=vault tag_value=server"
+     auto_join_scheme = "http"
+  }
+    
 api_addr = "http://172.31.16.107:8200"
 
 cluster_addr = "http://173.31.16.107:8201"
