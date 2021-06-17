@@ -17,8 +17,16 @@ storage "raft" {
 retry_join {
      auto_join = "provider=aws region=eu-north-1 tag_key=vault tag_value=server"
      auto_join_scheme = "http"
-  }
-    
+}
+
+seal "gcpckms" {
+   credentials = "cred.json"
+   project     = "my-project-1234-285014"
+   region      = "global"
+   key_ring    = "catalina"
+   crypto_key  = "vault"
+}
+
 api_addr = "http://172.31.16.107:8200"
 
 cluster_addr = "http://173.31.16.107:8201"
