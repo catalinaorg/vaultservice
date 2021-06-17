@@ -39,7 +39,7 @@ sudo chmod 640 /etc/vault.d/vault.hcl
 sudo chmod -R 744 /opt/vault
 
 
-sudo curl -o /etc/systemd/system/vault.service https://raw.githubusercontent.com/catalinasmeu>
+sudo curl -o /etc/systemd/system/vault.service https://raw.githubusercontent.com/catalinasmeureanu/vaultservice/main/vault.service
 
 sudo systemctl enable vault.service
 sudo systemctl start vault.service
