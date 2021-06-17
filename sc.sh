@@ -27,8 +27,7 @@ EOF
 sudo mkdir /etc/vault.d
 sudo cp vault-server.hcl /etc/vault.d/vault.hcl
 
-sudo mkdir /opt
-sudo mkdir /opt/vault
+sudo mkdir -p /opt/vault
 
 #Create Vault data directories
 sudo mkdir -p /var/lib/vault/data
