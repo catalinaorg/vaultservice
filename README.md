@@ -15,7 +15,7 @@ Note:  Ip addresses `api_addr` and `cluster_addr` need to be adjusted depending 
 
 `$ ./sc.sh`
 
-Sample output:
+Check if the vault service is running
 
 ```
 
