@@ -15,6 +15,9 @@ Note:  Ip addresses `api_addr` and `cluster_addr` need to be adjusted depending 
 
 `$ ./sc.sh`
 
+Sample output:
+
+```
 
 $ sudo systemctl status vault.service
 ● vault.service - "HashiCorp Vault - A tool for managing secrets"
@@ -36,6 +39,8 @@ Jul 02 08:31:22 ip-10-0-1-254 vault[15867]: ==> Vault server started! Log data w
 Jul 02 08:31:22 ip-10-0-1-254 vault[15867]: 2021-07-02T08:31:22.009Z [INFO]  proxy environment: http_proxy= https_proxy= no_proxy=
 Jul 02 08:31:22 ip-10-0-1-254 vault[15867]: 2021-07-02T08:31:22.013Z [INFO]  replication.perf.logshipper: Initializing new log shipper: max_elements=16384 max_bytes=203235942
 Jul 02 08:31:22 ip-10-0-1-254 vault[15867]: 2021-07-02T08:31:22.013Z [INFO]  replication.dr.logshipper: Initializing new log shipper: max_elements=16384 max_bytes=203235942
+
+```
 
 Restart vault service:
  
