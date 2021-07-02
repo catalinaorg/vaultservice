@@ -16,6 +16,10 @@ Note:  Ip addresses `api_addr` and `cluster_addr` need to be adjusted depending 
 `./sc.sh`
 
 
+# Troubleshooting
+
+```
+
 systemctl status vault.service
 ● vault.service - "HashiCorp Vault - A tool for managing secrets"
    Loaded: loaded (/etc/systemd/system/vault.service; enabled; vendor preset: enabled)
@@ -31,8 +35,8 @@ Jul 02 08:07:06 ip-10-0-1-254 systemd[1]: vault.service: Start request repeated 
 Jul 02 08:07:06 ip-10-0-1-254 systemd[1]: vault.service: Failed with result 'exit-code'.
 Jul 02 08:07:06 ip-10-0-1-254 systemd[1]: Failed to start "HashiCorp Vault - A tool for managing secrets".
 
+```
 
-Troubleshooting
 
 `sudo -u vault /usr/local/bin/vault server -config=/etc/vault.d/vault.hcl`
 
