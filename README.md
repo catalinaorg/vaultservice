@@ -56,7 +56,7 @@ Option:
 
 ```
 
-systemctl status vault.service
+$ systemctl status vault.service
 ● vault.service - "HashiCorp Vault - A tool for managing secrets"
    Loaded: loaded (/etc/systemd/system/vault.service; enabled; vendor preset: enabled)
    Active: failed (Result: exit-code) since Fri 2021-07-02 08:07:06 UTC; 6min ago
