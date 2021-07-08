@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+IP = $1
 
 cat > vault-server.hcl <<EOF
 disable_mlock = true
@@ -20,9 +21,9 @@ storage "raft" {
 
 }
 
-api_addr = "http://172.31.16.107:8200"
+api_addr =  "http://$IP:8200"
 
-cluster_addr = "http://173.31.16.107:8201"
+cluster_addr = "http://$IP:8201"
 EOF
 
 sudo mkdir /etc/vault.d
